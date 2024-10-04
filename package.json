@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "scripts": {
+    "start": "concurrently \"cd backend && nodemon server.js\" \"cd frontend && npm start\""
+  },
+  "dependencies": {
+    "react-router-dom": "^6.26.2"
+  }
+}
