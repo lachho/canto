@@ -55,6 +55,8 @@ const AddWord = ({ toggle }) => {
     setYale(convertedYale);
   };
 
+  
+
   return (
     <form onSubmit={handleSubmit} className="textbox">
       <input
