@@ -5,7 +5,7 @@ import Popup from './Popup/Popup';
 const MenuBar = ({toggle}) => {
   const [menuData, setMenuData] = useState([]);
   const [popupContent, setPopupContent] = useState(null);
-  const [popup, setPopup] = useState(false);
+  // const [popup, setPopup] = useState(false);
 
   // Load the menu data from the JSON file
   useEffect(() => {
@@ -17,12 +17,12 @@ const MenuBar = ({toggle}) => {
 
   const handleMouseEnter = (content) => {
     setPopupContent(content);
-    setPopup(true);
+    // setPopup(true);
   };
 
   const handlePopupClose = () => {
     setPopupContent(null);
-    setPopup(false);
+    // setPopup(false);
   };
 
   return (

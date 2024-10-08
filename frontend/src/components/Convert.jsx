@@ -131,47 +131,47 @@ export function toAccent(word) {
 
 
 // Main function to test the toNumber function
-function main() {
-	// Test cases
-	const accentWords = [
-			'bēll',
-			'Áéíoúh',
-			'báh',
-			'câfe',
-			'More',
-			'ànimal',
-			'hôla',
-			'áéíóú',
-			'hello',
-			'hēll',
-			'm̀h'
-	];
+// function main() {
+// 	// Test cases
+// 	const accentWords = [
+// 			'bēll',
+// 			'Áéíoúh',
+// 			'báh',
+// 			'câfe',
+// 			'More',
+// 			'ànimal',
+// 			'hôla',
+// 			'áéíóú',
+// 			'hello',
+// 			'hēll',
+// 			'm̀h'
+// 	];
 
-	// Testing the accentWords function with each test word
-	accentWords.forEach(word => {
-			const result = toNumber(word);
-			console.log(`Input: "${word}" => Output: "${result}"`);
-	});
+// 	// Testing the accentWords function with each test word
+// 	accentWords.forEach(word => {
+// 			const result = toNumber(word);
+// 			console.log(`Input: "${word}" => Output: "${result}"`);
+// 	});
 
-	const numberWords = [
-		'gei2',
-		'ngai2',
-		'dyun5',
-		'maan6',		
-		'sai3',
-		'pang4',
-		'maan1',
-		'wai6'
-  ];
+// 	const numberWords = [
+// 		'gei2',
+// 		'ngai2',
+// 		'dyun5',
+// 		'maan6',		
+// 		'sai3',
+// 		'pang4',
+// 		'maan1',
+// 		'wai6'
+//   ];
 
-  console.log("next");
+//   console.log("next");
 
-  // Testing the toNumber function with each test word
-  numberWords.forEach(word => {
-      const result = toAccent(word);
-      console.log(`Input: "${word}" => Output: "${result}"`);
-  });
-}
+//   // Testing the toNumber function with each test word
+//   numberWords.forEach(word => {
+//       const result = toAccent(word);
+//       console.log(`Input: "${word}" => Output: "${result}"`);
+//   });
+// }
 
 // Call the main function
 // main();
