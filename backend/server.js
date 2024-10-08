@@ -9,7 +9,7 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-const dataFilePath = path.join(__dirname, 'data.json');
+const dataFilePath = path.join(__dirname, '../frontend/public/data.json');
 
 // Function to read data from the JSON file
 const readDataFromFile = () => {
@@ -27,7 +27,7 @@ const writeDataToFile = (data) => {
 
 // Basic Route
 app.get('/', (req, res) => {
-    res.send('API is running.LSADALKS..');
+    res.send('API is running...');
 });
 
 const addTagAndTime = (body) => {
@@ -48,7 +48,7 @@ app.post('/words', (req, res) => {
     
     // Write updated words back to file
     writeDataToFile(words);
-    console.log(words);
+    console.log('new word:', words);
     
     res.status(201).json(newWord);
 });
@@ -56,7 +56,7 @@ app.post('/words', (req, res) => {
 app.get('/words', (req, res) => {
     
     const words = readDataFromFile();
-    console.log('db:', words);
+    console.log('sent words');
 
     res.status(201).json(words);
 });
