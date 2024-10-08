@@ -1,0 +1,19 @@
+.dictionary table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.dictionary th, .dictionary td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.dictionary th {
+  background-color: rgb(2, 98, 0);
+  color: white;
+}
+/* 
+.dictionary tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
