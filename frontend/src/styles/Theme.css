@@ -1,0 +1,20 @@
+/* theme.css */
+:root {
+    --secondary-color: #821e1e;
+    --primary-color: #900000;
+    --background-color: rgba(42, 48, 61, 0.8);
+
+    --text-color: #ffffff;
+    --text-hover: #ffd900;
+    --border-color: #ffffffad;
+    --hover-color: rgba(195, 191, 191, 0.18);
+
+    --input-bg-color: rgba(255, 255, 255, 0.45);
+    --input-text-color: #000000;
+
+    --close-button: #8f1515;
+    --close-hover: #d72020;
+    --open-button: rgb(2, 98, 0);
+    --link: #3aa0ff;
+    /* Add more variables for other elements */
+}

@@ -140,7 +140,9 @@
           "Automatically convert from accents to yale tones",
           "Add and search by tags",
           "Bulk import words from another datasource",
-          "Search by exact key word match"
+          "Search by exact key word match",
+          "Edit database tags, definitions, etc..."
+
         ]  
       },
       {
@@ -149,7 +151,9 @@
           "Question and comments box",
           "Better filtering and sorting algorithm",
           "Drop downs for search and filtering",
-          "Edit and delete database tags, definitions, etc...",
+          "Export Data feature",
+          "Flash card generator",
+          "Delete rows",
           "Instant clipboard for accented vowels",
           "Potential layout redesign for menu bar on side",
           "Menu bar to remember if section was open or closed",

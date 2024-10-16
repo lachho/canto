@@ -16,21 +16,11 @@ const Import = ({toggle}) => {
     const wordsArray = rows.map(row => {
       const [english, tone, yale, chinese, tagString] = row;
   
-
-      // Helper function to process each word in a phrase
-      const processPhrase = (phrase, converterFunc) => {
-        return phrase.split(' ').map(word => converterFunc(word)).join(' ');
-      };
-
-      // Determine the tone and yale, applying the functions word-by-word
-      const processedTone = tone || (yale ? processPhrase(yale, toNumber) : '');
-      const processedYale = yale || (tone ? processPhrase(tone, toAccent) : '');
-
       // Initialize an object to hold the word data
       const wordObject = {
         english,
-        tone: processedTone,
-        yale: processedYale,
+        tone: tone || (yale ? toNumber(yale) : ''),
+        yale: yale || (tone ? toAccent(tone) : ''),
         chinese,
         tagString
       };

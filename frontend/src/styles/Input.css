@@ -1,28 +1,43 @@
 .textbox {
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .textbox input, textarea {
+  flex: 1;
+  width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.textbox input::placeholder, textarea::placeholder {
+  color: var(--border-color);
+  opacity: 1;
 }
 
 .textbox textarea {
   padding: 10px;
   width: 60vw;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
 }
 
 .textbox button {
   padding: 10px 15px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+  background-color: var(--primary-color);
+  color: var(--text-color)e;
+  border: 1px solid var(--border-color);
   cursor: pointer;
+
 }
 
 .textbox button:hover {
-  background-color: #45a049;
+  background-color: var(--secondary-color);
 }
 
 .import {
@@ -30,4 +45,4 @@
   flex-direction: column; 
   align-items: center;
   gap: 10px;
-}
+} 

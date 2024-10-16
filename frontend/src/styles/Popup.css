@@ -3,7 +3,7 @@
   top: 100%;
   left: 50%;
   transform: translate(-50%);
-  background-color: #282c34;
+  background-color: var(--background-color);
   
   /* color: rgb(0, 0, 0); */
   padding: 0px 10px;
@@ -29,7 +29,7 @@
 }
 
 .popup-section h3:hover {
-  color: #787878;
+  color: var(--text-hover);
 }
 
 
@@ -55,20 +55,19 @@
   margin: 0em 0.5em;
   padding: 0.1em 0.3em;
   border-radius: 5px;
-  color: #ffffff;
 }
 
 .icon.closed {
-  background-color: rgb(2, 98, 0);
+  background-color: var(--open-button);
 }
 
 .icon.open {
-  background-color: #8f1515;
+  background-color: var(--close-button);
 }
 
 .close-button {
-  background-color: #8f1515;
-  color: rgb(255, 255, 255);
+  background-color: var(--close-button);
+  color: var(--text-color);
   border: none;
   padding: 8px 10px;
   cursor: pointer;
@@ -79,7 +78,7 @@
 }
 
 .close-button:hover {
-  background-color: #d72020;
+  background-color: var(--close-hover);
 }
 
 .section {
@@ -92,5 +91,5 @@
 }
 
 .link {
-  color: #007ff5;
+  color: var(--link);
 }

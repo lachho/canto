@@ -2,34 +2,55 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  /* backdrop-filter: blur(10px); */
 }
 
 .custom-table {
   width: auto;
-  max-width: 100%;
+  width: 100%;
   border-collapse: collapse;
   table-layout: auto;
   word-wrap: break-word;
-  border: 2px solid #747474;
+  border: 2px solid var(--border-color);
 }
 
 .table-header {
-  background-color: rgb(2, 98, 0);
-  border: 1px solid #747474;
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
   padding: 10px;
   text-align: left;
   font-weight: bold;
   white-space: nowrap;
+  z-index: 1;
+  top: 0;
+  position: sticky;
 }
 
 .table-content {
   padding: 12px;
   text-align: left;
-  border: 1px solid #747474;
+  border: 1px solid var(--border-color);
   white-space: pre-line;;
 }
 
 .custom-table tbody tr:hover {
-  background-color: #046900;
+  background-color: var(--hover-color);
 
+}
+
+.table-content input {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  border-radius: 5px;
 }

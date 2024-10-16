@@ -8,12 +8,13 @@ const MenuBar = ({toggle}) => {
   // const [popup, setPopup] = useState(false);
 
   // Load the menu data from the JSON file
-  // useEffect(() => {
-  //   fetch('/menu.json')
-  //     .then(response => response.json())
-  //     .then(data => setMenuData(data))
-  //     .catch(error => console.error('Error fetching menu data:', error));
-  // }, []);
+  useEffect(() => {
+    console.log(fetch('/menu.json'));
+    fetch('/menu.json')
+      .then(response => response.json())
+      .then(data => setMenuData(data))
+      .catch(error => console.error('Error fetching menu data:', error));
+  }, []);
 
   const handleMouseEnter = (content) => {
     setPopupContent(content);

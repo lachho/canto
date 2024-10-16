@@ -1,12 +1,21 @@
+body {
+  background-image:  url('/public/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .App {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  background-color: #282c34;
-  color: white;
+  /* background-color: var(--background-color); */
+  color: var(--text-color);
   min-height: 100vh;
   max-height: 100%;
   box-sizing: border-box; 
   overflow: auto; 
+  padding-bottom: 10vh;
 }
 
 .App-logo {

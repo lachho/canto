@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
-import '../styles/Input.css';
-import { toNumber, toAccent } from './Convert';
+import '../../styles/Input.css';
+import { toNumber, toAccent } from '../Convert';
 import axios from 'axios';
 
-const AddWord = ({ toggle }) => {
-  const [english, setEnglish] = useState('');
-  const [chinese, setChinese] = useState('');
-  const [yale, setYale] = useState('');
-  const [tone, setTone] = useState('');
-  const [tags, setTags] = useState('');
+const AddWord = (
+  { 
+    toggle, 
+    english, 
+    setEnglish, 
+    chinese, 
+    setChinese, 
+    yale, 
+    setYale, 
+    tone, 
+    setTone, 
+    tags, 
+    setTags
+  }) => {
+
 
   const submit = async (wordData) => {
     try {
@@ -37,25 +46,17 @@ const AddWord = ({ toggle }) => {
   const handleYaleChange = (e) => {
     const yaleInput = e.target.value;
     setYale(yaleInput);
-    const convertedTone = yaleInput
-      .split(' ')
-      .map(toNumber)
-      .join(' ');
+    const convertedTone = toNumber(yaleInput);
     setTone(convertedTone);
   };
-
+  
   // Handle changes in the Number Tone input field
   const handleToneChange = (e) => {
     const toneInput = e.target.value;
     setTone(toneInput);
-    const convertedYale = toneInput
-      .split(' ')
-      .map(toAccent)
-      .join(' ');
+    const convertedYale = toAccent(toneInput);
     setYale(convertedYale);
-  };
-
-  
+  };  
 
   return (
     <form onSubmit={handleSubmit} className="textbox">

@@ -1,5 +1,6 @@
 // Function to convert accents to number-based tones
-export function toNumber(word) {
+
+function toNumberSingle(word) {
 	const accents = /[aeiouāēīōūáéíóúàèìòù]/i;
 	let result = '';
 
@@ -73,9 +74,8 @@ export function toNumber(word) {
 	return result;
 }
 
-
 // Function to convert number-based tones to accents
-export function toAccent(word) {
+function toAccentSingle(word) {
 	const macron = '\u0304'; 
 	const grave = '\u0300';
 	const acute = '\u0301';
@@ -108,7 +108,7 @@ export function toAccent(word) {
 		}
 	}
 
-	console.log(result);
+	// console.log(result);
 	let index = -1;
 	if (tone === '4' || tone === '5' || tone === '6') {
     for (let i = 0; i < word.length; i++) {
@@ -129,49 +129,27 @@ export function toAccent(word) {
 	return result;
 }
 
+const updateWord = (dictionary, id, key, value) => {
+	const updatedWords = { ...dictionary }; // Create a shallow copy of the dictionary object
+    const wordToUpdate = updatedWords[id]; // Get the word to update using the id as the key
+    console.log("word changed", id, updatedWords);
+    if (wordToUpdate) {
+		wordToUpdate[key] = value; // Update the specific field
+		
+		if (key === 'tone') {
+			wordToUpdate.yale = toAccent(value); // Update 'yale' field based on 'tone'
+		}
+		else if (key === 'yale') {
+			wordToUpdate.tone = toNumber(value); // Update 'tone' field based on 'yale'
+		}
+		else if (key === 'tags') {
+			wordToUpdate.tags = value.split(',').map(tag => tag.trim().toLowerCase()).filter(tag => tag !== '');
+		}
 
-// Main function to test the toNumber function
-// function main() {
-// 	// Test cases
-// 	const accentWords = [
-// 			'bēll',
-// 			'Áéíoúh',
-// 			'báh',
-// 			'câfe',
-// 			'More',
-// 			'ànimal',
-// 			'hôla',
-// 			'áéíóú',
-// 			'hello',
-// 			'hēll',
-// 			'm̀h'
-// 	];
+		return updatedWords; // Update the local state
+	}
+}
 
-// 	// Testing the accentWords function with each test word
-// 	accentWords.forEach(word => {
-// 			const result = toNumber(word);
-// 			console.log(`Input: "${word}" => Output: "${result}"`);
-// 	});
-
-// 	const numberWords = [
-// 		'gei2',
-// 		'ngai2',
-// 		'dyun5',
-// 		'maan6',		
-// 		'sai3',
-// 		'pang4',
-// 		'maan1',
-// 		'wai6'
-//   ];
-
-//   console.log("next");
-
-//   // Testing the toNumber function with each test word
-//   numberWords.forEach(word => {
-//       const result = toAccent(word);
-//       console.log(`Input: "${word}" => Output: "${result}"`);
-//   });
-// }
-
-// Call the main function
-// main();
+const toNumber = (str) => str.split(' ').map(toNumberSingle).join(' ');
+const toAccent = (str) => str.split(' ').map(toAccentSingle).join(' ');
+module.exports = { toNumber, toAccent, updateWord };
