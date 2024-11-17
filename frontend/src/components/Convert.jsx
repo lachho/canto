@@ -1,9 +1,12 @@
 // Function to convert accents to number-based tones
-
 function toNumberSingle(word) {
 	const accents = /[aeiouāēīōūáéíóúàèìòù]/i;
+	const alphanumeric = /[a-zA-Z0-9]$/; // Alphanumeric or combining diacritical marks
+    if (!alphanumeric.test(word) && !accents.test(word)) {
+        return word;
+    }
+	
 	let result = '';
-
 	let h = false;
 	let vowel = false;
 	let accent = '';

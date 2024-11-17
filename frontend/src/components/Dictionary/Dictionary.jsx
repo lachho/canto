@@ -19,19 +19,6 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
   }
 
   const handleUpdate = (id, key, value) => {
-    // const updatedWords = { ...dictionary }; // Create a shallow copy of the dictionary object
-    // const wordToUpdate = updatedWords[id]; // Get the word to update using the id as the key
-    // console.log("word changed", id, updatedWords);
-    // if (wordToUpdate) {
-    //   wordToUpdate[key] = value; // Update the specific field
-      
-    //   if (key === 'tone') {
-    //     wordToUpdate.yale = toAccent(value); // Update 'yale' field based on 'tone'
-    //   }
-    //   if (key === 'yale') {
-    //     wordToUpdate.tone = toNumber(value); // Update 'tone' field based on 'yale'
-    //   }
-
     setDictionary(updateWord(dictionary, id, key, value)); // Update the local state
     editDictionary(id, key, value); // Call the function to update the backend
   };
@@ -60,42 +47,39 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
       let weight;
       if (key === "tone") {
         weight = 3;
-      } else if (key === "yale") {
-        weight = 3;
-      } else {
+      } 
+      else if (key === "yale") {
+        weight = 0;
+      } 
+      else if (key === "english") {
         weight = 1;
+      } else {
+        weight = 0.5;
       }
 
-      searchTerms.forEach((term) => {
-        let wordsArray = word[key].toString().toLowerCase().split(/\s+/);
-      
-        if (key === "tone") {
-          wordsArray = wordsArray.map((w) => w.replace(/\d+$/, ''));
-        }
+      // fix word array to drop numbers and other stuff
+      const wordsArray = word[key].toString().toLowerCase().split(/[.,()!?;:\s]+/);
 
+      let points = 0;
+      searchTerms.forEach((term) => {
         if (wordsArray.includes(term)) {
-          score += 10 * weight;
-        }
-        else if (word[key].toString().toLowerCase().includes(term)) {
-          score += 1 * weight; // Lower score for partial matches, biased to the left
+          points += 10 * weight;
+        } else if (key === "tone" && wordsArray.some((word) => word.replace(/\d+$/, '') === term)) {
+          points += 100 * weight;
+        } else if (word[key].toString().toLowerCase().includes(term)) {
+          points += 1 * weight;
         }
       });
+
+      if (points > 0) {
+        points -= Math.min(wordsArray.length * 0.1, 0.95);
+      }
+
+      score += points;
     });
 
     return score;
   };
-
-  // useEffect(() => {
-  //   setFilteredWords(searchTerms.length
-  //     ? Object.values(dictionary) // Convert the dictionary object to an array
-  //         .map((word) => ({
-  //           ...word,
-  //           score: relevanceScore(word), // Calculate the score for each word
-  //         }))
-  //         .filter((word) => word.score > 0) // Keep only words with a score > 0
-  //         .sort((a, b) => b.score - a.score) // Sort by score in descending order
-  //     : Object.values(dictionary)); // If search is empty, return the whole dictionary as an array
-  // }, [dictionary, searchTerms]);
 
   useEffect(() => {
     const filtered = searchTerms.length
@@ -109,6 +93,7 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
       : Object.keys(dictionary).map(id => ({ id, score: 0 })); // If search is empty, set score to 0 for all words
   
     setFilteredWords(filtered); // Set filtered words with their IDs and scores
+    console.log(filtered);
   }, [dictionary, searchTerms]);
   
   

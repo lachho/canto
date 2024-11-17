@@ -9,7 +9,7 @@ body {
 .App {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
   color: var(--text-color);
   min-height: 100vh;
   max-height: 100%;

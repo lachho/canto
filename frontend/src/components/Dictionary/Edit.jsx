@@ -38,7 +38,7 @@ const Edit = ({ value, onUpdate }) => {
           setEditable(true); // Enter edit mode
           originalValue.current = value; // Save the original value when entering edit mode
         }}>
-          {value}
+          {value || <i style={{ color: '#aaa' }}>edit</i>}
         </span>
       )}
     </div>
