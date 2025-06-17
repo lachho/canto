@@ -172,7 +172,7 @@
     ]
   },
   "20": {
-    "english": "how many?",
+    "english": "how many, much?",
     "tone": "gei2 do1 a3?",
     "yale": "géi dō a?",
     "chinese": "",
@@ -558,7 +558,7 @@
     ]
   },
   "62": {
-    "english": "and",
+    "english": "and, with",
     "tone": "tung4",
     "yale": "tùhng",
     "chinese": "",
@@ -605,8 +605,8 @@
   },
   "67": {
     "english": "past tense of a verb",
-    "tone": "___ jau2",
-    "yale": "___ jáu",
+    "tone": "___ jo2",
+    "yale": "___ jó",
     "chinese": "",
     "tags": [
       "grammatical",
@@ -1234,7 +1234,7 @@
     ]
   },
   "136": {
-    "english": "Many",
+    "english": "Many, much",
     "tone": "do1",
     "yale": "dō",
     "chinese": "多",
@@ -1451,7 +1451,7 @@
     ]
   },
   "160": {
-    "english": "lucky, ",
+    "english": "lucky",
     "tone": "choi2",
     "yale": "chói",
     "chinese": "",
@@ -1738,7 +1738,7 @@
     ]
   },
   "191": {
-    "english": "going out",
+    "english": "going out, go out",
     "tone": "Cheut1 heui3",
     "yale": "Chēut heui",
     "chinese": "出去",
@@ -1749,8 +1749,8 @@
   },
   "192": {
     "english": "going to city",
-    "tone": "chut saeng",
-    "yale": "chut saeng",
+    "tone": "cheut1 saeng",
+    "yale": "chēut saeng",
     "chinese": "",
     "tags": [
       "transportation",
@@ -2158,13 +2158,11 @@
     ]
   },
   "237": {
-    "english": "look for",
-    "tone": "wan2 3",
-    "yale": "wán ",
+    "english": "Chinese New Year",
+    "tone": "juung1 gwok3 san1 nin4",
+    "yale": "jūung gwok sān nìhn",
     "chinese": "",
-    "tags": [
-      "verb"
-    ]
+    "tags": []
   },
   "238": {
     "english": "give",
@@ -2356,7 +2354,7 @@
     ]
   },
   "259": {
-    "english": "food",
+    "english": "food (groceries)",
     "tone": "sung3 / choi3",
     "yale": "sung / choi",
     "chinese": "",
@@ -2803,8 +2801,8 @@
   },
   "308": {
     "english": "middle school",
-    "tone": "juung3 hok",
-    "yale": "juung hok",
+    "tone": "juung3 hok6",
+    "yale": "juung hohk",
     "chinese": "",
     "tags": [
       "place"
@@ -2812,8 +2810,8 @@
   },
   "309": {
     "english": "primary school",
-    "tone": "sai2 hok6",
-    "yale": "sái hohk",
+    "tone": "sai3 hok6",
+    "yale": "sai hohk",
     "chinese": "",
     "tags": [
       "place"
@@ -3030,7 +3028,7 @@
     ]
   },
   "333": {
-    "english": "rain",
+    "english": "falling",
     "tone": "lok6",
     "yale": "lohk",
     "chinese": "",
@@ -4221,7 +4219,7 @@
     ]
   },
   "464": {
-    "english": "poem, master professional",
+    "english": "poem, master, professional",
     "tone": "si1",
     "yale": "sī",
     "chinese": "",
@@ -4230,7 +4228,7 @@
     ]
   },
   "465": {
-    "english": "try",
+    "english": "try, test",
     "tone": "si3",
     "yale": "si",
     "chinese": "",
@@ -4830,7 +4828,7 @@
     "english": "necessary, need",
     "tone": "sai2",
     "yale": "sái",
-    "chinese": "",
+    "chinese": "使",
     "tags": [
       "verb"
     ]
@@ -4998,12 +4996,12 @@
     ]
   },
   "556": {
-    "english": "convenient",
-    "tone": "fong1 bin6",
-    "yale": "fōng bihn",
+    "english": "first (firstly)",
+    "tone": "sin1",
+    "yale": "sīn",
     "chinese": "",
     "tags": [
-      "adjective"
+      "time"
     ]
   },
   "557": {
@@ -5044,9 +5042,9 @@
     ]
   },
   "561": {
-    "english": "while, at the same time",
-    "tone": "go2 jan6 si4",
-    "yale": "gó jahn sìh",
+    "english": "left (direction)",
+    "tone": "jo2 bin6",
+    "yale": "jó bihn",
     "chinese": "",
     "tags": []
   },
@@ -5214,8 +5212,8 @@
   },
   "582": {
     "english": "hungry",
-    "tone": "ngoh3",
-    "yale": "ngoh",
+    "tone": "tou5 ngo6",
+    "yale": "tóuh ngoh",
     "chinese": "",
     "tags": [
       "food"
@@ -6499,7 +6497,7 @@
     ]
   },
   "750": {
-    "english": "___ will be fine",
+    "english": "___, then it will be fine",
     "tone": "___ jau6 dak1 ge3 la3",
     "yale": "___ jauh dāk ge la",
     "chinese": "...就得嘅喇",
@@ -6669,9 +6667,9 @@
     ]
   },
   "770": {
-    "english": "if",
-    "tone": "ge3 wa6 (put at end of sentence)",
-    "yale": "ge wah (put at end of sentence)",
+    "english": "if (used at end of sentence)",
+    "tone": "ge3 wa6",
+    "yale": "ge wah",
     "chinese": "嘅話",
     "tags": [
       "grammatical"
@@ -6742,7 +6740,7 @@
     "tags": []
   },
   "779": {
-    "english": "Looks like",
+    "english": "Looks like, seems like",
     "tone": "hou2 chi5",
     "yale": "hóu chíh",
     "chinese": "好似",
@@ -6837,7 +6835,7 @@
     ]
   },
   "790": {
-    "english": "middle size",
+    "english": "middle, medium size",
     "tone": "jung1 ma5",
     "yale": "jūng máh",
     "chinese": "中碼",
@@ -6880,7 +6878,7 @@
     "tags": []
   },
   "795": {
-    "english": "So so, medium",
+    "english": "So so, medium (goodness)",
     "tone": "ma4 ma2 dei2",
     "yale": "màh má déi",
     "chinese": "嘛嘛哋",
@@ -7249,7 +7247,8 @@
     "yale": "sih dō bē léi",
     "chinese": "",
     "tags": [
-      "food"
+      "food",
+      "fruit"
     ]
   },
   "837": {
@@ -7278,7 +7277,7 @@
     ]
   },
   "840": {
-    "english": "New Yoek",
+    "english": "New York",
     "tone": "nau2 yeuk3",
     "yale": "náu yeuk",
     "chinese": "",
@@ -7296,12 +7295,12 @@
     ]
   },
   "842": {
-    "english": "travel",
-    "tone": "heui3 leui5 hang4",
-    "yale": "heui léuih hàhng",
+    "english": "rain",
+    "tone": "yu2",
+    "yale": "yú",
     "chinese": "",
     "tags": [
-      "transportation"
+      "weather"
     ]
   },
   "843": {
@@ -7510,9 +7509,9 @@
     ]
   },
   "868": {
-    "english": "During (used after Verb object compound)",
-    "tone": "go2 jan6 si4",
-    "yale": "gó jahn sìh",
+    "english": "while ___, at the same time, during ___",
+    "tone": "___ go2 jan6 si4",
+    "yale": "___ gó jahn sìh",
     "chinese": "嗰陣時",
     "tags": [
       "time",
@@ -7543,9 +7542,9 @@
     ]
   },
   "872": {
-    "english": "Go travelling",
-    "tone": "heui3 leui5 hang4",
-    "yale": "heui léuih hàhng",
+    "english": "Go travelling to ___",
+    "tone": "heui3 ___ leui5 hang4",
+    "yale": "heui ___ léuih hàhng",
     "chinese": "去旅行",
     "tags": [
       "transportation"
@@ -7603,11 +7602,14 @@
     ]
   },
   "880": {
-    "english": "make (food)",
+    "english": "make, craft",
     "tone": "jing2",
     "yale": "jíng",
     "chinese": "整",
-    "tags": []
+    "tags": [
+      "verb",
+      "cooking"
+    ]
   },
   "881": {
     "english": "pick up someone",
@@ -7679,8 +7681,8 @@
   },
   "890": {
     "english": "Whatever is ok",
-    "tone": "me1 dou1 dak1",
-    "yale": "mē dōu dāk",
+    "tone": "___ dou1 dak1",
+    "yale": "___ dōu dāk",
     "chinese": "咩都得",
     "tags": [
       "phrase"
@@ -7731,7 +7733,7 @@
     "tags": []
   },
   "897": {
-    "english": "Chinese new year",
+    "english": "Lunar new year",
     "tone": "nung4 lik6 san1 nin4",
     "yale": "nùhng lihk sān nìhn",
     "chinese": "農曆新年",
@@ -7768,9 +7770,9 @@
     ]
   },
   "902": {
-    "english": "Not until; only when",
-    "tone": "sin1 ji3",
-    "yale": "sīn ji",
+    "english": "Not until; only when ___ (lateness)",
+    "tone": "*time* sin1 ji3 *verb*",
+    "yale": "*time* sīn ji *verb*",
     "chinese": "先至",
     "tags": []
   },
@@ -7789,12 +7791,12 @@
     "tags": []
   },
   "905": {
-    "english": "Ferry",
-    "tone": "syun4",
-    "yale": "syùhn",
-    "chinese": "船",
+    "english": "",
+    "tone": "",
+    "yale": "",
+    "chinese": "",
     "tags": [
-      "transportation"
+      "blank"
     ]
   },
   "906": {
@@ -7812,11 +7814,13 @@
     "tags": []
   },
   "908": {
-    "english": "find",
+    "english": "find, look for",
     "tone": "wan2",
     "yale": "wán",
     "chinese": "揾",
-    "tags": []
+    "tags": [
+      "verb"
+    ]
   },
   "909": {
     "english": "One hour",
@@ -7865,7 +7869,7 @@
     ]
   },
   "915": {
-    "english": "If (used at the beginning of a sentence)",
+    "english": "If (used at beginning of sentence)",
     "tone": "yu4 gwo2",
     "yale": "yùh gwó",
     "chinese": "如果",
@@ -7879,5 +7883,222 @@
     "tags": [
       "food"
     ]
+  },
+  "917": {
+    "english": "lastly, finally",
+    "tone": "jeui3 hau6",
+    "yale": "jeui hauh",
+    "chinese": "",
+    "tags": [
+      "time"
+    ]
+  },
+  "918": {
+    "english": "hike",
+    "tone": "saan1 haang4",
+    "yale": "sāan hàahng",
+    "chinese": "",
+    "tags": []
+  },
+  "919": {
+    "english": "right (direction)",
+    "tone": "yau6 bin6",
+    "yale": "yauh bihn",
+    "chinese": "",
+    "tags": []
+  },
+  "920": {
+    "english": "stop",
+    "tone": "ting4 dai1",
+    "yale": "tìhng dāi",
+    "chinese": "",
+    "tags": []
+  },
+  "921": {
+    "english": "graduate",
+    "tone": "bat1 yip6",
+    "yale": "bāt yihp",
+    "chinese": "",
+    "tags": [
+      "major"
+    ]
+  },
+  "922": {
+    "english": "card (letter)",
+    "tone": "kaat1",
+    "yale": "kāat",
+    "chinese": "",
+    "tags": []
+  },
+  "923": {
+    "english": "a piece of ___",
+    "tone": "yat1 jeung1 ___",
+    "yale": "yāt jēung ___",
+    "chinese": "",
+    "tags": []
+  },
+  "924": {
+    "english": "turkey",
+    "tone": "fo2 gai1",
+    "yale": "fó gāi",
+    "chinese": "",
+    "tags": []
+  },
+  "925": {
+    "english": "egg",
+    "tone": "daan2",
+    "yale": "dáan",
+    "chinese": "",
+    "tags": [
+      "food"
+    ]
+  },
+  "926": {
+    "english": "lemon",
+    "tone": "ling4 mung1",
+    "yale": "lìhng mūng",
+    "chinese": "",
+    "tags": [
+      "fruit"
+    ]
+  },
+  "927": {
+    "english": "banana",
+    "tone": "heung1 jiu1",
+    "yale": "hēung jīu",
+    "chinese": "",
+    "tags": [
+      "fruit"
+    ]
+  },
+  "928": {
+    "english": "apple",
+    "tone": "ping4 gwo2",
+    "yale": "pìhng gwó",
+    "chinese": "",
+    "tags": [
+      "fruit"
+    ]
+  },
+  "929": {
+    "english": "watermelon",
+    "tone": "sai1 gwa1",
+    "yale": "sāi gwā",
+    "chinese": "",
+    "tags": [
+      "fruit"
+    ]
+  },
+  "930": {
+    "english": "studious",
+    "tone": "kan4 lek1",
+    "yale": "kàhn lēk",
+    "chinese": "",
+    "tags": []
+  },
+  "931": {
+    "english": "dirty",
+    "tone": "wu1 jou1",
+    "yale": "wū jōu",
+    "chinese": "",
+    "tags": []
+  },
+  "932": {
+    "english": "Thanksgiving",
+    "tone": "gam2 yan1 jit3",
+    "yale": "gám yān jit",
+    "chinese": "",
+    "tags": []
+  },
+  "933": {
+    "english": "only, then (earliness)",
+    "tone": "*time* jau6 *verb*",
+    "yale": "*time* jauh *verb*",
+    "chinese": "",
+    "tags": []
+  },
+  "934": {
+    "english": "take",
+    "tone": "haau2",
+    "yale": "háau",
+    "chinese": "",
+    "tags": []
+  },
+  "935": {
+    "english": "marry",
+    "tone": "git3 fan1",
+    "yale": "git fān",
+    "chinese": "",
+    "tags": []
+  },
+  "936": {
+    "english": "rest",
+    "tone": "jau1 sik1",
+    "yale": "jāu sīk",
+    "chinese": "",
+    "tags": []
+  },
+  "937": {
+    "english": "rock climb",
+    "tone": "paa4 saan1",
+    "yale": "pàah sāan",
+    "chinese": "爬山",
+    "tags": []
+  },
+  "938": {
+    "english": "hiking",
+    "tone": "saan1 haang4",
+    "yale": "sāan hàahng",
+    "chinese": "",
+    "tags": []
+  },
+  "939": {
+    "english": "road",
+    "tone": "lou6",
+    "yale": "louh",
+    "chinese": "",
+    "tags": []
+  },
+  "940": {
+    "english": "festival, holiday",
+    "tone": "jit3",
+    "yale": "jit",
+    "chinese": "",
+    "tags": []
+  },
+  "941": {
+    "english": "labour day",
+    "tone": "lou4 dung6 jit3",
+    "yale": "lòuh duhng jit",
+    "chinese": "",
+    "tags": []
+  },
+  "942": {
+    "english": "Easter",
+    "tone": "fuk6 wut6 jit3",
+    "yale": "fuhk wuht jit",
+    "chinese": "",
+    "tags": []
+  },
+  "943": {
+    "english": "park the car, parking",
+    "tone": "paak3 che1",
+    "yale": "paak chē",
+    "chinese": "",
+    "tags": []
+  },
+  "944": {
+    "english": "school",
+    "tone": "faan1 hok6",
+    "yale": "fāan hohk",
+    "chinese": "",
+    "tags": []
+  },
+  "945": {
+    "english": "ice skating",
+    "tone": "lau4 bing1",
+    "yale": "làuh bīng",
+    "chinese": "",
+    "tags": []
   }
 }

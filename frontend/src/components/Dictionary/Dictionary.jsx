@@ -31,7 +31,7 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
       } else {
         setSearchTerms([]); // Reset search terms if input is empty
       }
-    }, 300);
+    }, 200);
 
     return () => {
       clearTimeout(handler);
@@ -46,13 +46,13 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
     keys.forEach((key) => {
       let weight;
       if (key === "tone") {
-        weight = 3;
+        weight = 2;
       } 
       else if (key === "yale") {
         weight = 0;
       } 
       else if (key === "english") {
-        weight = 1;
+        weight = 1.2;
       } else {
         weight = 0.5;
       }
@@ -65,7 +65,7 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
         if (wordsArray.includes(term)) {
           points += 10 * weight;
         } else if (key === "tone" && wordsArray.some((word) => word.replace(/\d+$/, '') === term)) {
-          points += 100 * weight;
+          points += 10 * weight;
         } else if (word[key].toString().toLowerCase().includes(term)) {
           points += 1 * weight;
         }
