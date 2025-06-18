@@ -1,26 +1,30 @@
 import React, { useState, useEffect, } from 'react';
 import '../../styles/Table.css';
 import Edit from './Edit'
-import axios from 'axios';
+// import axios from 'axios';  // Removed for static version
 import { updateWord } from '../Convert';
 
 
-const Dictionary = ({ search, dictionary, setDictionary }) => {
+const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => {  // Added isStatic prop
   const [searchTerms, setSearchTerms] = useState([]);
   const [filteredWords, setFilteredWords] = useState(dictionary);
 
-  const editDictionary = async (id, key, value) => {
-    try {
-      await axios.put('http://localhost:5000/edit', {id, key, value});
-      console.log('Value Updated:', id, key, value);
-    } catch (error) {
-      console.error('Error adding word:', error);
-    }
-  }
+  // const editDictionary = async (id, key, value) => {  // Removed API call for static version
+  //   try {
+  //     await axios.put('http://localhost:5000/edit', {id, key, value});
+  //     console.log('Value Updated:', id, key, value);
+  //   } catch (error) {
+  //     console.error('Error adding word:', error);
+  //   }
+  // }
 
   const handleUpdate = (id, key, value) => {
+    if (isStatic) {
+      console.log('Editing disabled in static portfolio version');
+      return;  // Disable editing in static mode
+    }
     setDictionary(updateWord(dictionary, id, key, value)); // Update the local state
-    editDictionary(id, key, value); // Call the function to update the backend
+    // editDictionary(id, key, value); // Call the function to update the backend
   };
 
   // Set a delay for search input
@@ -126,6 +130,7 @@ const Dictionary = ({ search, dictionary, setDictionary }) => {
                       <Edit
                         value={cellValue}
                         onUpdate={(newValue) => handleUpdate(id, field, newValue)}
+                        isReadOnly={isStatic}  // Pass read-only mode to Edit component
                       />
                     </td>
                   );
