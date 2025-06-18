@@ -4,7 +4,7 @@ import Link from './Link';
 import Table from './Table';
 import Import from './Import';
 
-const Content = ({ part }) => {
+const Content = ({ part, toggle }) => {
   if (typeof part === 'string') {
     return <Text text={part} />;
   } else if (part.link) {
@@ -12,7 +12,7 @@ const Content = ({ part }) => {
   } else if (part.table) {
     return <Table content={part.table} />;
   } else if (part.import) {
-    return <Import />;
+    return <Import toggle={toggle}/>;
   } else {
     return null;
   }

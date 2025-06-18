@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Menu.css';
 import Popup from './Popup/Popup';
 
-const MenuBar = () => {
+const MenuBar = ({toggle}) => {
   const [menuData, setMenuData] = useState([]);
   const [popupContent, setPopupContent] = useState(null);
 
@@ -41,6 +41,7 @@ const MenuBar = () => {
           title={popupContent.title}
           sections={popupContent.sections}
           onClose={handlePopupClose}
+          toggle={toggle}
         />
       )}
     </div>

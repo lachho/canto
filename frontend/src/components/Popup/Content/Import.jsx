@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../../styles/Input.css';
 
-const Import = () => {
+const Import = ({toggle}) => {
   const [wordData, setWordData] = useState('');
 
   const handleMassAdd = () => {

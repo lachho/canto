@@ -10,6 +10,7 @@ import '../styles/Home.css';
 const Database = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const { dictionary, addWord, updateWord } = useDictionary();
+  const [trigger, setTrigger] = useState(0);
   const [english, setEnglish] = useState('');
   const [chinese, setChinese] = useState('');
   const [yale, setYale] = useState('');
@@ -33,12 +34,14 @@ const Database = () => {
     setChinese('');
     setTone('');
     setTags('');
+    // Trigger update for any components that need it
+    setTrigger(prev => prev + 1);
   };
 
   return (
 <div className="database">
   <div className="top">
-    <MenuBar />
+    <MenuBar toggle={setTrigger}/>
     <h1>Ultimate Canto-English Dictionary</h1>
     <div className="portfolio-notice">
       <p style={{color: '#666', fontSize: '0.9em', fontStyle: 'italic'}}>
