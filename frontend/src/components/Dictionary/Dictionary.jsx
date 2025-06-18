@@ -1,30 +1,14 @@
-import React, { useState, useEffect, } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../../styles/Table.css';
 import Edit from './Edit'
-// import axios from 'axios';  // Removed for static version
-import { updateWord } from '../Convert';
 
 
-const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => {  // Added isStatic prop
+const Dictionary = ({ search, dictionary, onUpdateWord }) => {
   const [searchTerms, setSearchTerms] = useState([]);
-  const [filteredWords, setFilteredWords] = useState(dictionary);
-
-  // const editDictionary = async (id, key, value) => {  // Removed API call for static version
-  //   try {
-  //     await axios.put('http://localhost:5000/edit', {id, key, value});
-  //     console.log('Value Updated:', id, key, value);
-  //   } catch (error) {
-  //     console.error('Error adding word:', error);
-  //   }
-  // }
+  const [filteredWords, setFilteredWords] = useState([]);
 
   const handleUpdate = (id, key, value) => {
-    if (isStatic) {
-      console.log('Editing disabled in static portfolio version');
-      return;  // Disable editing in static mode
-    }
-    setDictionary(updateWord(dictionary, id, key, value)); // Update the local state
-    // editDictionary(id, key, value); // Call the function to update the backend
+    onUpdateWord(id, key, value);
   };
 
   // Set a delay for search input
@@ -42,7 +26,7 @@ const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => 
     };
   }, [search]);
   
-  const relevanceScore = (word) => {
+  const relevanceScore = useCallback((word) => {
     let score = 0;
     const keys = Object.keys(word);
   
@@ -83,7 +67,7 @@ const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => 
     });
 
     return score;
-  };
+  }, [searchTerms]);
 
   useEffect(() => {
     const filtered = searchTerms.length
@@ -98,7 +82,7 @@ const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => 
   
     setFilteredWords(filtered); // Set filtered words with their IDs and scores
     console.log(filtered);
-  }, [dictionary, searchTerms]);
+  }, [dictionary, searchTerms, relevanceScore]);
   
   
 
@@ -130,7 +114,6 @@ const Dictionary = ({ search, dictionary, setDictionary, isStatic = false }) => 
                       <Edit
                         value={cellValue}
                         onUpdate={(newValue) => handleUpdate(id, field, newValue)}
-                        isReadOnly={isStatic}  // Pass read-only mode to Edit component
                       />
                     </td>
                   );

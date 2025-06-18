@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
-const Edit = ({ value, onUpdate, isReadOnly = false }) => {
+const Edit = ({ value, onUpdate }) => {
   const [editable, setEditable] = useState(false);
   const [inputValue, setInputValue] = useState(value);
   const originalValue = useRef(value);
@@ -19,7 +19,7 @@ const Edit = ({ value, onUpdate, isReadOnly = false }) => {
 
   return (
     <div>
-      {editable && !isReadOnly ? (
+      {editable ? (
         <input
           type="text"
           value={inputValue}
@@ -34,17 +34,11 @@ const Edit = ({ value, onUpdate, isReadOnly = false }) => {
           autoFocus
         />
       ) : (
-        <span 
-          onClick={isReadOnly ? undefined : () => {
-            setEditable(true); // Enter edit mode
-            originalValue.current = value; // Save the original value when entering edit mode
-          }}
-          style={{
-            cursor: isReadOnly ? 'default' : 'pointer',
-            color: isReadOnly ? 'inherit' : 'inherit'
-          }}
-        >
-          {value || (isReadOnly ? '' : <i style={{ color: '#aaa' }}>edit</i>)}
+        <span onClick={() => {
+          setEditable(true); // Enter edit mode
+          originalValue.current = value; // Save the original value when entering edit mode
+        }}>
+          {value || <i style={{ color: '#aaa' }}>edit</i>}
         </span>
       )}
     </div>

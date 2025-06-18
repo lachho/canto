@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../styles/Input.css';
 import { toNumber, toAccent } from '../Convert';
-import axios from 'axios';
 
 const AddWord = (
   { 
-    toggle, 
+    onAddWord,
     english, 
     setEnglish, 
     chinese, 
@@ -18,28 +17,12 @@ const AddWord = (
     setTags
   }) => {
 
-
-  const submit = async (wordData) => {
-    try {
-        console.log(wordData);
-        const response = await axios.post('http://localhost:5000/words', wordData);
-        console.log('Word added:', response.data);
-        toggle(Math.random());
-    } catch (error) {
-        console.error('Error adding word:', error);
-    }
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (english && yale && tone) {
       const tagString = tags;
-      submit({ english, chinese, yale, tone, tagString });
-      setEnglish('');
-      setYale('');
-      setChinese('');
-      setTone('');
-      setTags('');
+      const wordData = { english, chinese, yale, tone, tagString };
+      onAddWord(wordData);
     }
   };
 

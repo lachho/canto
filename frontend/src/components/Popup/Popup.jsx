@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../../styles/Popup.css';
 import Content from './Content/Content';
 
-const Popup = ({ title, sections, onClose, toggle }) => {
+const Popup = ({ title, sections, onClose }) => {
   const popupRef = useRef(null);
   const [openSections, setOpenSections] = useState(
     sections.map((section) => true)
@@ -89,10 +89,10 @@ const Popup = ({ title, sections, onClose, toggle }) => {
               <div className="section-content">
                 {Array.isArray(section.content) ? (
                   section.content.map((part, partIndex) => ( // Added partIndex for a unique key
-                    <Content key={partIndex} part={part} toggle={toggle} />
+                    <Content key={partIndex} part={part} />
                   ))
                 ) : (
-                  <Content part={section.content} toggle={toggle} />
+                  <Content part={section.content} />
                 )}
               </div>
             )}
