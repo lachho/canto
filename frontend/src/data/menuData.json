@@ -1,0 +1,204 @@
+[
+  {
+    "title": "Pronounciation",
+    "sections": [
+      {
+        "header": "Consonant Sounds",
+        "content": [{
+          "table": [
+            {"consonants": "Aspirated stops", "sounds": "p, t, k, ch, kw", "notes": "A lot of air!"},
+            {"consonants": "Unaspirated stops", "sounds": "b, d, g, j, gw", "notes": "Not voiced, ‘j’ is not rounded"},
+            {"consonants": "Nasals", "sounds": "m, n, ng", "notes": "‘ng’ is the back, not tongue tip\n‘ng’ is disappearing\n‘n’ often pronounced as ‘l’ (nei -> lei)"},
+            {"consonants": "Fricatives and continuants", "sounds": "f, l, h, s", "notes": ""}
+          ]
+        }]
+      },
+      {
+        "header": "Vowel Sounds",
+        "content": [{
+          "table": [
+            {"Vowels": "Semi vowels", "Sounds": "y, w", "Notes": ""},
+            {"Vowels": "Front vowels", "Sounds": "i, e, a, aa", "Notes": "There is a short and long version of 'a'"},
+            {"Vowels": "Front rounded vowels", "Sounds": "yu, eu", "Notes": "Make front vowels first, and then round them"},
+            {"Vowels": "Back vowels", "Sounds": "u, o", "Notes": ""}
+          ]
+        }]
+      },
+      {
+        "header": "Long and Short Vowels",
+        "content": [{
+          "table": [
+            {"-": "a", "Long": "a", "Example": "pa", "Short": "ai", "Example.": "pai"},
+            {"-": "", "Long": "aai", "Example": "gaai", "Short": "au", "Example.": "gau"},
+            {"-": "", "Long": "aam", "Example": "saam", "Short": "an", "Example.": "san"},
+            {"-": "", "Long": "aau", "Example": "maau", "Short": "am", "Example.": "mam"},
+            {"-": "", "Long": "aan", "Example": "saan", "Short": "ang", "Example.": "wang"},
+            {"-": "", "Long": "aang", "Example": "waang", "Short": "ap", "Example.": "sap"},
+            {"-": "", "Long": "aap", "Example": "paat", "Short": "at", "Example.": "mat"},
+            {"-": "", "Long": "aat", "Example": "gaat", "Short": "ak", "Example.": "gak"},
+            {"-": "", "Long": "aak", "Example": "waak", "Short": "", "Example.": ""},
+            {"-": "e", "Long": "e", "Example": "yē", "Short": "ei", "Example.": "bēi"},
+            {"-": "", "Long": "eng", "Example": "leng", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ek", "Example": "pēk", "Short": "", "Example.": ""},
+            {"-": "i", "Long": "i", "Example": "chī", "Short": "ing", "Example.": "hīng"},
+            {"-": "", "Long": "iu", "Example": "chīu", "Short": "ik", "Example.": "hīk"},
+            {"-": "", "Long": "im", "Example": "jīm", "Short": "", "Example.": ""},
+            {"-": "", "Long": "it", "Example": "līt", "Short": "", "Example.": ""},
+            {"-": "", "Long": "in", "Example": "jīn", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ip", "Example": "līp", "Short": "", "Example.": ""},
+            {"-": "o", "Long": "o", "Example": "pō", "Short": "ou", "Example.": "gōu"},
+            {"-": "", "Long": "oi", "Example": "pōi", "Short": "", "Example.": ""},
+            {"-": "", "Long": "on", "Example": "mōn", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ong", "Example": "mōng", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ot", "Example": "wōt", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ok", "Example": "wōk", "Short": "", "Example.": ""},
+            {"-": "u", "Long": "u", "Example": "gū", "Short": "uk", "Example.": "wūk"},
+            {"-": "", "Long": "ui", "Example": "gūi", "Short": "ung", "Example.": "wūng"},
+            {"-": "", "Long": "un", "Example": "fūn", "Short": "", "Example.": ""},
+            {"-": "", "Long": "ut", "Example": "fūt", "Short": "", "Example.": ""},
+            {"-": "eu", "Long": "eu", "Example": "kēu", "Short": "eun", "Example.": "chēun"},
+            {"-": "", "Long": "eung", "Example": "kēung", "Short": "eut", "Example.": "jēut"},
+            {"-": "", "Long": "euk", "Example": "gēuk", "Short": "eui", "Example.": "sēui"},
+            {"-": "yu", "Long": "yu", "Example": "nyū ", "Short": "", "Example.": ""},
+            {"-": "", "Long": "yut", "Example": "kyūt", "Short": "", "Example.": ""},
+            {"-": "", "Long": "yun", "Example": "chyūn", "Short": "", "Example.": ""}
+          ]
+        }]
+      },
+      {
+        "header": "Other Factors to consider",
+        "content": ["- Openness",
+        "- Tongue Frontness",
+        "- Duration (where to anchor)",
+        "- Pitch",
+        "- Voicing",
+        "- Lip roundness",
+        "- Transition",
+        "- Attitude!"]
+      }
+    ]
+  },
+  {
+    "title": "Tones",
+    "sections": [
+      {
+        "header": "6 Tonal Sounds",
+        "content": ["There are 6 tones to be aware of in modern cantonese. Some say there are 7 or 9, but it 6 is commonly accepted for simplicity.",
+          {
+            "table": 	[
+              {"Tones": "High level", "Yale": "sī", "Number": "si1", "Pitch": "Pitch: 55"},
+              {"Tones": "High rising", "Yale": "sí", "Number": "si2", "Pitch": "Pitch: 35"},
+              {"Tones": "Mid level", "Yale": "si", "Number": "si3", "Pitch": "Pitch: 33"},
+              {"Tones": "Low falling", "Yale": "sìh", "Number": "si4", "Pitch": "Pitch: 21"},
+              {"Tones": "Low rising", "Yale": "síh", "Number": "si5", "Pitch": "Pitch: 13"},
+              {"Tones": "Low level", "Yale": "sih", "Number": "si6", "Pitch": "Pitch: 22"}
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Tone Characters",
+        "content": ["With yale romanisation, the different tones are represented by accents on the vowel sounds.",
+          {
+            "table": 	[
+              {"1": "ā", "2": "á", "3": "a", "4": "àh", "5": "áh", "6": "ah"},
+              {"1": "ē", "2": "é", "3": "e", "4": "èh", "5": "éh", "6": "eh"},
+              {"1": "ī", "2": "í", "3": "i", "4": "ìh", "5": "íh", "6": "ih"},
+              {"1": "ō", "2": "ó", "3": "o", "4": "òh", "5": "óh", "6": "oh"},
+              {"1": "ū", "2": "ú", "3": "u", "4": "ùh", "5": "úh", "6": "uh"},
+              {"1": "m̄", "2": "ḿ", "3": "m", "4": "m̀h", "5": "ḿh", "6": "mh"},
+              {"1": "n̄", "2": "ń", "3": "n", "4": "ǹh", "5": "ńh", "6": "nh"}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "About Me",
+    "sections": [
+      {
+        "header": "Hi, its Lachy",
+        "content": [
+          "This project was inspired by my Cantonese class at UC Berkeley.",
+          "I had always wanted to learn Cantonese, my heritage language, but never found the time to commit myself to learning it.",
+          "I began developing an Excel spreadsheet as a dictionary to translate words, but hopefully, this app is more useful than a spreadsheet.",
+          "Additionally, the database will easily convert from Jyutpin to Yale Romanization with tones and numbers.",
+          "I am in the process of extending this project to utilize larger dictionary datasets."
+        ]
+      },
+      {
+        "header": "Drop me a message",
+        "content": ["its in the works"
+        ]  
+      },
+      {
+        "header": "Completed Features",
+        "content": [
+          "Pronounication and Tone Guide (in menu bar)",
+          "Add new word to database",
+          "Automatically convert from accents to yale tones",
+          "Add and search by tags",
+          "Bulk import words from another datasource",
+          "Search by exact key word match",
+          "Edit database tags, definitions, etc..."
+
+        ]  
+      },
+      {
+        "header": "Upcoming Features",
+        "content": [
+          "Question and comments box",
+          "Better filtering and sorting algorithm",
+          "Drop downs for search and filtering",
+          "Export Data feature",
+          "Flash card generator",
+          "Delete rows",
+          "Instant clipboard for accented vowels",
+          "Potential layout redesign for menu bar on side",
+          "Menu bar to remember if section was open or closed",
+          "Improved pronounciation guide with all vowel/consonant combinations",
+          "Adding and cleaning a larger dataset from other sources",
+          "Online access for all students",
+          "Individual Logins to personalise the database",
+          "Add in audio notes for pronounciation",
+          "Mobile cross-compatability"
+        ]  
+      },
+      {
+        "header": "My Socials",
+        "content": [
+          { "text": "My Email", "link": "lachlan.ho@gmail.com" }, "",
+          { "text": "My LinkedIn", "link": "https://www.linkedin.com/in/lachlanho/" }, "",
+          { "text": "My Other Projects", "link": "https://github.com/lachho" }, "",
+          { "text": "My Resume", "link": "https://github.com/lachho" }
+        ]  
+      }
+    ]
+  },
+  {
+    "title": "More",
+    "sections": [
+      {
+        "header": "Bulk Import Words",
+        "content": [
+          "Copy paste data from excel or sheets, ensuring columns are english, tone, yale, chinese, tags.",
+          {"import": "true"}
+        ]  
+      },
+      {
+        "header": "Useful Links",
+        "content": [
+          { "text": "Dictionary for cellphones", "link": "https://www.pleco.com/"}, "",
+          { "text": "Cantonese pinyin input software", "link": "https://www.cpime.hk/p/cantonese-pinyin-input-software.html"}, "",
+          { "text": "Chinese Character Database: With Word-formations", "link": "https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/"}, "",
+          { "text": "Lexical items with English explanations for Fundamental Chinese Learning in HK Schools", "link": "https://www.edbchinese.hk/lexlist_en/"}, "",
+          { "text": "Google extension for typing Cantonese (1)",  "link": "https://www.youtube.com/watch?v=WWIaj8e9jN8"}, "",
+          { "text": "Google extension for typing Cantonese (2)", "link": "https://www.youtube.com/watch?v=Vwp5TwYGsnw"}, "",
+          { "text": "Convert Chinese characters to Cantonese Romanization", "link": "https://hongkongvision.com/tool/cc_py_conv_en"}, ""
+        ]  
+      }
+    ]
+  }
+
+]

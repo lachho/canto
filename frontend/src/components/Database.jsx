@@ -10,13 +10,16 @@ import '../styles/Home.css';
 const Database = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const { dictionary, addWord, updateWord } = useDictionary();
-  const [trigger, setTrigger] = useState(0);
+  const [, setTrigger] = useState(0);
   const [english, setEnglish] = useState('');
   const [chinese, setChinese] = useState('');
   const [yale, setYale] = useState('');
   const [tone, setTone] = useState('');
   const [tags, setTags] = useState('');
-  const [searchALl, setSearchAll] = useState('');
+  const [searchAll, setSearchAll] = useState('');
+
+  console.log('Database component rendering...');
+  console.log('Dictionary loaded with entries:', Object.keys(dictionary).length);
 
   useEffect(() => {
     setSearchAll(`${searchTerm} ${english} ${tone} ${tags.replace(/,/g, ' ')}`.trim());
@@ -65,7 +68,7 @@ const Database = () => {
   </div>
   <div className="search">
     <Dictionary 
-      search={searchALl} 
+      search={searchAll} 
       dictionary={dictionary} 
       onUpdateWord={updateWord}
     />

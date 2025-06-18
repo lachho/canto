@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Menu.css';
 import Popup from './Popup/Popup';
+import menuDataImport from '../data/menuData.json';
 
 const MenuBar = ({toggle}) => {
   const [menuData, setMenuData] = useState([]);
   const [popupContent, setPopupContent] = useState(null);
 
-  // Load the menu data from the JSON file
   useEffect(() => {
-    console.log(fetch('/menu.json'));
-    fetch('/menu.json')
-      .then(response => response.json())
-      .then(data => setMenuData(data))
-      .catch(error => console.error('Error fetching menu data:', error));
+    setMenuData(menuDataImport);
   }, []);
 
   const handleMouseEnter = (content) => {
